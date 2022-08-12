@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.hero {
+  height: 100vh;
+}
+
+.hero--container {
+  margin: 0 5%;
+  height: 100%;
+}
+.hero--container p {
+  text-align: justify;
+}
+.hero--container h2 {
+  color: #18d26e;
+  padding-top: 55px;
+}
+.hero--container .heading {
+  color: #18d26e;
+  text-decoration: underline;
+}
+.hero--container .seperator {
+  margin: 1rem 0;
+  background-color: #18d26e;
+  color: #18d26e;
+  border-width: 2px;
+  width: 70%;
+  border: 2px solid #18d26e;
+}
+.hero--container a {
+  color: #18d26e;
+  text-decoration: none;
+}
+
+.nav--bar {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav--link {
+  color: #18d26e;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.hero--wrapper {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.hero--wrapper .hero--text {
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.img--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+.img--container .hero--name {
+  font-size: 60px;
+  text-align: center;
+  color: #18d26e;
+  line-height: 3rem;
+}
+.img--container .hero--name span {
+  font-size: 50px;
+}
+
+#profile--pic {
+  border-radius: 50%;
+  border: 5px solid #18d26e;
+  height: 200px;
+  width: 200px;
+}
+
+.project--thumbnail {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.card {
+  background-color: #18d26e;
+  width: 300px;
+  border-radius: 5px;
+  color: black;
+  padding-bottom: 5px;
+}
+.card h3 {
+  text-align: center;
+}
+
+.projects--wrapper {
+  padding-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills--wrapper {
+  margin: 0 5%;
+}
+.skills--wrapper h2 {
+  color: #18d26e;
+  margin: 1rem 0;
+}
+.skills--wrapper .my--skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.skills--wrapper .the--skill {
+  background-color: #18d26e;
+  color: black;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+
+.contact--section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin-top: 30px;
+}
+.contact--section .form--container {
+  width: 500px;
+  padding: 30px 40px;
+  background-color: transparent;
+  border: 1px solid rgb(123, 247, 175);
+  border-radius: 5px;
+  margin: 20px;
+}
+.contact--section .form--container h2 {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #18d26e;
+}
+.contact--section .form--container .form--control {
+  width: 100%;
+}
+.contact--section .form--container .form--control textarea {
+  height: 200px;
+}
+.contact--section .form--container .form--control .form--field {
+  width: 100%;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 3px;
+  border: 0;
+  border-bottom: 2px solid #18d26e;
+  margin: 15px 0;
+  color: white;
+}
+.contact--section .form--container .form--control .form--field:focus {
+  outline: none;
+}
+.contact--section .form--container .form--control .form--field:valid {
+  background-color: transparent;
+}
+.contact--section .form--container .btn--send {
+  width: 100%;
+  background-color: #18d26e;
+  height: 40px;
+  border-radius: 5px;
+}
+
+footer {
+  height: 50px;
+  color: #18d26e;
+  text-align: center;
+  padding: 10px;
+}
+footer .heading {
+  color: #18d26e;
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */

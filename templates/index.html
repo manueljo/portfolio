@@ -1,0 +1,278 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <script src="https://kit.fontawesome.com/0af7e20fee.js" crossorigin="anonymous"></script>
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+          <nav>
+            <div class="nav--bar">
+              <a class="nav--link" href="{% url 'index' %}">Home</a>
+              <a class="nav--link" href="{% url 'about' %}">About</a>
+              <a class="nav--link" href="{% url 'project' %}">Projects</a>
+            </div>
+          </nav>
+      </header>
+    </div>
+
+{% if page == 'home' %}
+    
+    <section class="hero">
+      <div class="hero--container">
+        <div class="hero--wrapper">
+          <div class="img--container">
+            <img id="profile--pic" src="{% static 'images/mj.jpg' %}" alt="">
+            <p class="hero--name" >Emmanuel <br> <span> Joshua Okon</span></p>
+          </div>
+          <div class="hero--text">
+            <p>Full-Stack Developer | Backend Developer | Technical Support Specialist</p>
+          </div>
+        </div>
+      </div>
+    </section>
+{% elif page == 'about' %}
+    <!-- About me and contact section-->
+   <section class="about--me">
+    <div class="hero--container">
+      <h2>More about me...</h2>
+      <hr class="seperator">
+      <p>I  am a quintessential technical support specialist and a backend developer using python (Django) with a continuous learning mindset. Deep conversance with operating system functionalities, system administration, computer security and computer networking through gathered experience in instructing students on cyber security and computer networking for 1 year and working as a technical support specialist for 3 years.</p>
+      <br>
+      <h3 class="heading">Career Summary</h3>
+      <p>
+        <ul>
+          <li>
+            <strong>Jul. 2022 – Present</strong><br>
+            Gabbytech ICT Consult, Osogbo, Nigeria <br>
+            <em class="heading">Role</em><br>
+            Full-Stack Developer.
+            <br>
+            <em class="heading">Outline</em><br>
+            Developing Full-Stack web applications for the organization.
+            <br>
+            <em class="heading">Key Achievement</em><br>
+            Building a savings application for teachers in the state to make savings using paystack integration.
+          </li><br>
+
+          <li>
+            <strong>Sept. 2021 – Jul. 2022</strong><br>
+            (NYSC) Ministry of Information and Strategy, Osogbo<br>
+            <em class="heading">Role</em><br>
+            IT Technician
+            <br>
+            <em class="heading">Outline</em><br>
+            Providing IT support in all areas in need across the entire organization.
+            <br>
+            <em class="heading">Key Achievement</em><br>
+            Creating a network homegroup which increased work flow due to connectivity.
+          </li><br>
+
+          <li>
+            <strong>Nov. 2021 – Jan. 2022</strong><br>
+            Gabbytech Computer Institute and Consult, Osogbo<br>
+            <em class="heading">Role</em><br>
+            IT Technician
+            <br>
+            <em class="heading">Outline</em><br>
+            Instructing student on python programming and taking them through the intricacies of software development.
+            <br>
+            <em class="heading">Key Achievement</em><br>
+            Introduction of students to Django, which is a python web development framework,  walking them down the steps of setting up a website, thereby increasing the number of students having interest in web developments.
+          </li><br>
+
+          <li>
+            <strong>Feb 2021 – Jul 2021	</strong><br>
+            De Aftermath Consults<br>
+            <em class="heading">Role</em><br>
+            Graphic Design Instructor
+            <br>
+            <em class="heading">Outline</em><br>
+            Introducing students (mostly Corps members) to the principles and elements of graphic design, use of the design concepts in branding and brand identity design.
+            <br>
+            <em class="heading">Key Achievement</em><br>
+            Introduction of student project presentation which made the organization stand out.
+          </li><br>
+
+          <li>
+            <strong>Mar 2020 – Jul 2021</strong><br>
+            De Aftermath Consults<br>
+            <em class="heading">Role</em><br>
+            Cyber Security Instructor
+            <br>
+            <em class="heading">Outline</em><br>
+            Training of students (mostly Corps members) on the importance of cyber security, how various attacks are carried out and diverse ways to thwart the attacks.
+            <br>
+            <em class="heading">Key Achievement</em><br>
+            Introducing students to online virtual labs thereby making the organization known for full practically in ethical hacking.
+          </li><br>
+
+          <li>
+            <strong>Mar 2020 – Jul 2021</strong><br>
+            De Aftermath Consults<br>
+            <em class="heading">Role</em><br>
+            Networking Instructor
+            <br>
+            <em class="heading">Outline</em><br>
+            Training students (mostly Corps members) and prospective candidates of the CCNA examination, reviewing examination questions and testing speed.
+            <br>
+            <em class="heading">Key Achievement</em><br>
+            Prompting the management and the use of live cisco devices which led to influx of students.
+          </li><br>
+
+          <li>
+            <strong>Aug 2017 – Feb 2019	</strong><br>
+            SLAWD PETERS Engineering Limited<br>
+            <em class="heading">Role</em><br>
+            IT Technician
+            <br>
+            <em class="heading">Outline</em><br>
+            Diagnosing and troubleshooting IT related problems in the entire organization.
+            <br>
+            <em class="heading">Key Achievement</em><br>
+            Networking systems to ease work flow.
+          </li><br>
+        </ul>
+      </p>
+      <h3 class="heading">Education & Qualification</h3>
+      <ul>
+        <li>Certificate of course completion, Jira Fundamentals, Atlassian University (2022)</li>
+        <li>Certificate of course completion, Google IT Support Professional, Coursera (2022)</li>
+        <li>Certificate of course completion, Fundamentals of Digital Marketing, Google Digital Skills for Africa (2022)</li>
+        <li>Certificate of course completion, Ethical Hacking – Mobile Platforms and Network Infrastructure, Great Learning Academy (2022)</li>
+        <li>B.Sc. Computer Science, University of Uyo (2021)</li>
+        <li>Certificate of course completion, Introduction to IoT, Cisco Network Academy (2021)</li>
+        <li>Certificate of course completion, Introduction to Cyber Security, Cisco Network Academy (2020)</li>
+        <li>Cisco ACNA - Aptech Certified Network Administrator (2019)</li>
+        <li>Certificate of Continuing Education, Kali Linux Fundamentals, Cybrary (2019)</li>
+        <li>Certificate in Graphic Design, Web Development and Database Management (2014)</li>
+        <li>Diploma in Data Processing (2013)</li>
+      </ul>
+    </div>
+    </section>
+  </div>
+
+    <!-- Contact -->
+    <section class="contact--section">
+      <div class="form--container">
+        <form action="" method="post">
+          {% csrf_token %}
+          <h2>Contact me</h2>
+          <div class="form--control">
+            <input type="email" name="email" class="form--field" placeholder="Enter Email" required>
+          </div>
+
+          <div class="form--control">
+            <input type="text" name="subject" class="form--field" placeholder="Email subject" required>
+          </div>
+
+          <div class="form--control">          
+            <textarea name="message" class="form--field" placeholder="Enter your message" required></textarea>
+          </div>
+
+          <input type="submit" value="Send" class="btn--send">
+        </form>
+      </div>
+    </section>
+
+{% elif page == 'projects' %}
+    <!-- Projects  -->
+    <section class="container">
+      <div class="hero--container">
+        <h2>My Projets...</h2>
+        <hr class="seperator">
+        <p>I made a stunnig discovery about myself, I found out that I quickly and easily grasp new IT concepts and that I can seamlessly fit into many disciplines just by familiarizing myself with the basics. As a junior network engineer, technical support specialist with no opportunity coming my way, coupled with the feeling of running out of time since I just concluded my one year National Service. With guidance from my tutor @ <a href="https://kairoshubs.com/" target="_blank">Kairoshubs</a>, I picked up web development fully, delved into Django for two weeks using it's awesome documentation. I took up projects to solidify my skills;<br><br>
+          <ul>
+            <li>The first project is a web application for teachers to make savings, just like piggy vest. the project is on heroku but not fully functional as the dashboard, payment integration needs to be worked on and a retouch of the UI is also needed. <a href="https://teachers-scheme.herokuapp.com/" target="_blank">Check</a></li><br>
+            <li>The second project as you can see the thumbnail is this portfolio website. I used Html, Sass and Django for the emailing. I used Django to render one html template but different content based on the active url. <a href="http://github.com/manueljo">Check</a> </li><br>
+            <li>The third project is a simple todo api using Django RestFramework.</li>
+          </ul>
+        </p>
+        <div class="projects--wrapper">
+          <div class="card">
+              <img class="project--thumbnail" src="{% static 'images/savings_project.png' %}" alt="">
+              <div class="card--body">
+                <h3>A savings web app for teachers using Html, Bootstrap and Django</h3>
+              </div>
+          </div>
+
+          <div class="card">
+              <img class="project--thumbnail" src="{% static 'images/project2.png' %}" alt="">
+              <div class="card--body">
+                <h3>Portfolio website using Html, Sass and Django for emailing</h3>
+              </div>
+          </div>
+
+          <div class="card">
+              <img class="project--thumbnail" src="{% static 'images/drf_project.png' %}" alt="">
+              <div class="card--body">
+                <h3>Simple Notes api using Django RestFramework</h3>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills--wrapper">
+        <h2>My skills...</h2>
+        <div class="my--skills">
+          <div class="the--skill">
+            <span>Git</span>
+          </div>
+
+          <div class="the--skill">
+            <span>Html</span>
+          </div>
+
+          <div class="the--skill">
+            <span>Css</span>
+          </div>
+
+          <div class="the--skill">
+            <span>JavaScript</span>
+          </div>
+
+          <div class="the--skill">
+            <span>Python</span>
+          </div>
+
+          <div class="the--skill">
+            <span>Django</span>
+          </div>
+
+          <div class="the--skill">
+            <span>Heroku</span>
+          </div>
+
+          <div class="the--skill">
+            <span>Sass</span>
+          </div>
+
+          <div class="the--skill">
+            <span>Linux</span>
+          </div>
+
+          <div class="the--skill">
+            <span>Networking</span>
+          </div>
+
+          <div class="the--skill">
+            <span>Postgres</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% endif %}
+    <!-- Footer Section-->
+    <footer>
+      &copy; copyright 2022 &#9996;manueljo <a href="http://github.com/manueljo" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github heading"></i></a> <a href="http://linkedin.com/in/emmanuel-joshua-okon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin heading"></i></a>
+    </footer>
+  </body>
+</html>
